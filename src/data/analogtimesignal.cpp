@@ -205,7 +205,7 @@ void AnalogTimeSignal::push_samples(void *data,
 {
 	//lock_guard<recursive_mutex> lock(mutex_);
 
-	double dsample;
+	double dsample = 0;
 
 	uint64_t pos = 0;
 	double time_stride = 0;
