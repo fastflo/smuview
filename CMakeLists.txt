@@ -68,6 +68,8 @@ if(NOT CMAKE_BUILD_TYPE)
 	FORCE)
 endif()
 
+# Generate compile_commands.json in build/ for clang-tidy
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 #===============================================================================
 #= Documentation
