@@ -73,9 +73,9 @@ void DoubleKnob::setup_ui()
 	if (property_ == nullptr || !property_->is_setable())
 		this->setDisabled(true);
 	if (property_ != nullptr && property_->is_getable())
-		on_value_changed(property_->value());
+		this->on_value_changed(property_->value());
 	else
-		on_value_changed(QVariant(.0));
+		this->on_value_changed(QVariant(.0));
 }
 
 void DoubleKnob::connect_signals()

@@ -52,7 +52,7 @@ public:
 	QVariant variant_value() const override;
 
 private:
-	void setup_ui();
+	void setup_ui(); // TODO: widgets::MonoFontDisplay also has setup_ui()
 	void connect_signals();
 
 private Q_SLOTS:

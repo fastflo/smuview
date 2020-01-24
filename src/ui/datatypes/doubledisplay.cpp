@@ -69,9 +69,9 @@ void DoubleDisplay::setup_ui()
 		this->set_unit(data::datautil::format_unit(property_->unit()));
 	}
 	if (property_ != nullptr && property_->is_getable())
-		on_value_changed(property_->value());
+		this->on_value_changed(property_->value());
 	else
-		on_value_changed(QVariant(.0));
+		this->on_value_changed(QVariant(.0));
 }
 
 void DoubleDisplay::connect_signals()

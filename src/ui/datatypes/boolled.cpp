@@ -63,7 +63,7 @@ void BoolLed::setup_ui()
 	// Led icon
 	led_label_ = new QLabel();
 	if (property_ != nullptr && property_->is_getable()) {
-		on_value_changed(property_->value());
+		BoolLed::on_value_changed(property_->value());
 	}
 	else {
 		led_label_->setPixmap(

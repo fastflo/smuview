@@ -62,7 +62,7 @@ void BoolButton::setup_ui()
 	if (property_ == nullptr || !property_->is_setable())
 		this->setDisabled(true);
 	if (property_ != nullptr && property_->is_getable()) {
-		on_value_changed(property_->value());
+		BoolButton::on_value_changed(property_->value());
 	}
 	else {
 		this->setIcon(dis_icon_);

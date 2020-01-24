@@ -55,9 +55,9 @@ void BoolCheckBox::setup_ui()
 	if (property_ == nullptr || !property_->is_setable())
 		this->setDisabled(true);
 	if (property_ != nullptr && property_->is_getable())
-		on_value_changed(property_->value());
+		BoolCheckBox::on_value_changed(property_->value());
 	else
-		on_value_changed(QVariant(false));
+		BoolCheckBox::on_value_changed(QVariant(false));
 }
 
 void BoolCheckBox::connect_signals()
