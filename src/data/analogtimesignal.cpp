@@ -280,8 +280,7 @@ double AnalogTimeSignal::first_timestamp(bool relative_time) const
 {
 	if (time_->size() == 0)
 		return 0.;
-
-	if (relative_time)
+	else if (relative_time)
 		return time_->front() - signal_start_timestamp_;
 	else
 		return time_->front();
@@ -291,13 +290,10 @@ double AnalogTimeSignal::last_timestamp(bool relative_time) const
 {
 	if (time_->size() == 0)
 		return 0.;
-
-	if (relative_time)
+	else if (relative_time)
 		return last_timestamp_ - signal_start_timestamp_;
 	else
 		return last_timestamp_;
-
-	return last_timestamp_;
 }
 
 void AnalogTimeSignal::on_channel_start_timestamp_changed(double timestamp)

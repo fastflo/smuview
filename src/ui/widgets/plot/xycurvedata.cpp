@@ -69,9 +69,8 @@ bool XYCurveData::is_equal(const BaseCurveData *other) const
 		return (x_t_signal_ == xycd->x_t_signal()) &&
 			(y_t_signal_ == xycd->y_t_signal());
 	}
-	else {
+	else
 		return false;
-	}
 }
 
 QPointF XYCurveData::sample(size_t i) const
