@@ -34,4 +34,6 @@ CheckOptions:
     value:           '1'
   - key:             readability-implicit-bool-conversion.AllowIntegerConditions
     value:           '1'
+  - key:             readability-redundant-member-init.IgnoreBaseInCopyConstructors
+    value:           '1'
 ...
