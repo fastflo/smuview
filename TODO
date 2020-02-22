@@ -1,6 +1,13 @@
 SmuView
 =======
 
+ToDo Code
+---------
+
+- BaseChannel::add_signal(), L. 156, Korad PSU TODO
+- Connection dialog thread
+
+
 ToDo
 ----
 
